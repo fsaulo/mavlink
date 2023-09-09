@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.13)
 
 project(mavlink)
 
-find_package(Python COMPONENTS Interpreter REQUIRED)
+find_package(Python ${MY_PYTHON_VERSION} EXACT COMPONENTS Interpreter REQUIRED)
 
 # We automatically install the pip dependencies locally below.
 # Therefore, we check whether pip is available here.
